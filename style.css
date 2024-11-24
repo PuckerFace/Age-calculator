@@ -26,16 +26,19 @@
 body {
   background-color: var(--off-white);
   display: grid;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   padding: 50px;
+  width: 100%;
 }
 .container {
   background-color: var(--white);
   padding: 30px;
   border-radius: 15px 15px 40% 15px;
   width: 600px;
-  margin: autos;
+
+  margin: 20px auto;
 }
 label {
   color: var(--off-black);
@@ -145,10 +148,12 @@ span {
     padding: 5px;
   }
 }
+
 @media (max-width: 412px) {
   .container {
     width: 350px;
-    border-radius: 15px 15px 35% 15px;
+    padding: 12px;
+    border-radius: 15px 15px 30% 15px;
   }
   .output-data {
     font-size: 50px;
